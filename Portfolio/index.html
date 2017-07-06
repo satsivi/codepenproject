@@ -3,6 +3,8 @@
 
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <title>ayylmao lol</title>
   <meta charset="utf-8">
@@ -10,22 +12,73 @@
 
 <style>
 /* CSS goes here */	
+/* navbar */
+.navbar-default {
+    background-color: #F4EEEC;
+    border-color: #E7E7E7;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
 
-/*.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-   /* top: 0; /* Position the navbar at the top of the page */
-   /* width: 100%; /* Full width */
-/*}*/
 
 .header{
-	margin-top: 60px;
+	padding-top: 50px;
+	height: 500px;
+	background-color:#B2CBD3;
 }
+
+.projects{
+	padding-top:50px;
+	background-color:#72A5A8;
+}
+
+.contactme{
+	padding-top:50px;
+	height:500px;
+	background-color:#5B6F81;
+}
+
+.myCarousel{
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+a.carousel-control:hover {
+    color:#ffffff !important;
+}
+
+
 </style>
 </head>
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,24 +86,77 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-			<a class="navbar-brand" href="#">WebSiteName</a>
+			<a class="navbar-brand" href="#home">Satsivi</a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#home">Home</a></li>
-			<li><a href="#">Page 1</a></li>
-			<li><a href="#">Page 2</a></li>
-			<li><a href="#">Page 3</a></li>
+			<li class="active"><a href="#home">About</a></li>
+				<li><a href="#projects">Portfolio</a></li>
+				<li><a href="#contactme">Contact Me</a></li>
 		</ul>
 	</div>
 </nav>
 
-<div class="container-fluid"  id="home">
-	<div class="header">
-	<h1>Title Title Title</h1>
+<div class="container-fluid">
+	<div class="header" id="home">
+	<h1>About me</h1>
+	<!--about me section-->
 	</div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan porttitor aliquet. Mauris eleifend magna non vehicula aliquam. Cras at nisi venenatis, elementum lectus vitae, hendrerit dolor. Nunc malesuada vitae metus ut finibus. Fusce vitae semper felis. Suspendisse vestibulum libero vel neque pharetra, sit amet laoreet justo mollis. Fusce gravida vel ipsum sed vulputate. Nulla sed aliquam diam. Ut sed elit at magna dapibus blandit eu sed nulla. Vestibulum molestie vel nisl nec euismod. Praesent mattis sollicitudin libero, et laoreet enim euismod quis. Mauris ut mauris commodo, auctor magna nec, rhoncus urna. Sed finibus ex sem, nec tincidunt velit dictum vel. Sed eu semper enim. Proin quis arcu condimentum mauris pulvinar placerat id a felis. Duis sed aliquet velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam congue hendrerit metus, vel finibus odio porta nec. Praesent fermentum nisi tellus, ultricies interdum orci ultrices a. In ultrices, tellus eu consequat dictum, est ipsum facilisis enim, in feugiat risus ligula eu lacus. Vestibulum feugiat auctor lectus non efficitur. Etiam vel tincidunt tortor, sed porttitor quam. Ut ut metus sed nisi vehicula hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum lorem et leo volutpat blandit. Etiam gravida elit et tellus maximus viverra. Nam ligula metus, lacinia et efficitur nec, rhoncus ut diam. Vivamus nibh elit, semper id odio ac, molestie mattis eros. Donec pretium nibh sed facilisis bibendum. Praesent a tortor mollis, volutpat eros nec, venenatis lectus. Ut gravida sed lacus at vulputate. Donec placerat hendrerit blandit. Nulla sagittis massa eget lacus cursus, nec efficitur ipsum porttitor. Ut tortor sem, sagittis finibus luctus at, gravida lacinia nisi. Nunc eu quam justo. Proin convallis lorem vitae accumsan suscipit. Cras pharetra, diam sit amet sagittis malesuada, ligula purus tempus dui, eu sollicitudin est magna ac nibh. Aenean at feugiat erat. Morbi lacinia, elit eget feugiat posuere, nisl lectus pharetra leo, sed ullamcorper urna urna vitae magna. Duis pharetra rhoncus felis sed condimentum. Aenean leo elit, consectetur et lorem ut, tristique sollicitudin elit. Integer sed risus quis nisl sagittis consectetur. Morbi pretium est at tincidunt placerat. Quisque vitae erat nisi. Donec vel diam vitae lorem tincidunt feugiat vel ut tortor. Quisque nec cursus quam. Curabitur ultrices ex augue, vitae placerat orci dictum et. Nunc accumsan, ligula a sagittis lobortis, tellus arcu luctus enim, a gravida eros enim quis felis. Duis ut justo a nunc pretium egestas id fringilla tortor. Sed eget finibus nulla, ac lacinia ante. Mauris egestas, ipsum non convallis bibendum, risus enim laoreet nibh, sed hendrerit nisi mauris sed ipsum. Suspendisse ex dui, lobortis nec vulputate ac, aliquam vitae libero. Nam nec tellus imperdiet, tempor tortor a, euismod metus. Pellentesque sit amet neque dui. Etiam porttitor, augue eget fermentum placerat, purus nibh eleifend felis, a vehicula felis odio a erat. Aenean pellentesque quam eget lobortis euismod. Vivamus vel scelerisque nulla. Aenean eget erat non justo aliquam laoreet quis vitae ligula. Nulla commodo non quam vel sodales. Suspendisse semper dictum purus, nec condimentum est scelerisque vel. Mauris id elit sit amet quam bibendum blandit. Phasellus lobortis tempor justo quis scelerisque. Duis venenatis auctor sapien, nec mattis libero tristique vitae. Nunc pellentesque magna non aliquet semper. Aliquam urna nunc, pharetra eget turpis in, elementum laoreet metus. Vivamus et mi tortor. Nunc sapien ante, blandit quis molestie ac, vulputate vitae enim. Integer mattis felis in leo maximus, nec pretium leo congue. Sed interdum dignissim mauris, sit amet sagittis lectus. Sed sodales tincidunt maximus. Praesent sem quam, consequat sed magna ut, pharetra euismod nisl. Integer euismod aliquam lorem quis eleifend. In hac habitasse platea dictumst. Nulla quis ex velit. Fusce aliquet a metus ut iaculis. Morbi ut convallis sapien. Aenean scelerisque, erat vel lobortis dictum, nisi sapien lacinia nulla, et finibus libero elit vel lectus. Suspendisse ut mauris ac lorem convallis posuere sed sit amet augue. Pellentesque et lorem laoreet, vestibulum sapien sed, consectetur ligula. Maecenas eu turpis at purus molestie elementum. Phasellus ut justo orci. Vestibulum sagittis, quam volutpat luctus condimentum, eros dui aliquam metus, nec mattis nibh ipsum ac enim. Donec feugiat quam elementum mauris tincidunt, sit amet mollis ex tincidunt. Curabitur suscipit facilisis urna nec faucibus. Fusce molestie diam lacus, et egestas ante pellentesque et. Praesent ultrices, enim ac pharetra gravida, velit justo tempus libero, vel blandit neque tellus sit amet velit. Sed porttitor neque ac felis fringilla imperdiet. Maecenas purus ipsum, congue vel tempor non, elementum ac augue. Aenean laoreet ex ac mauris posuere egestas. Aenean vel egestas diam. Fusce efficitur, odio tincidunt imperdiet commodo, augue purus laoreet risus, vehicula luctus lectus est eu tortor. In hac habitasse platea dictumst. Suspendisse blandit mattis leo sit amet bibendum. Aenean eleifend felis vel arcu faucibus euismod. Maecenas malesuada eu ligula nec faucibus. Suspendisse vulputate cursus maximus. Vestibulum congue nisi enim, in accumsan nunc finibus non. Donec sagittis elit vel nisl congue, at porta ligula pellentesque. Curabitur sodales id ipsum non ullamcorper. Maecenas vel finibus urna. Integer id mattis magna, eget dapibus est. Morbi sit amet elementum ligula, ac fermentum arcu. Ut at ornare metus, nec aliquet lectus. Cras molestie lobortis nisi, sed aliquam libero pharetra vitae. Nam nec ligula lobortis, congue libero ut, faucibus libero. Cras dapibus semper mi. Sed egestas orci ante, eget volutpat nunc luctus in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus pharetra massa at elit tempus imperdiet. Suspendisse ultricies lacinia arcu, quis tempor lacus. Duis eget lectus nec justo viverra scelerisque. Phasellus scelerisque urna eu sagittis posuere. Nam lectus nunc, sagittis et ultricies in, finibus et est. Donec sagittis accumsan arcu, sed tempor urna dapibus eget. Praesent nec quam ut massa pharetra lobortis et vitae orci. Morbi laoreet ac turpis non tincidunt. Donec vitae leo rhoncus, ornare lectus ut, venenatis quam. Fusce dapibus, est eget luctus scelerisque, ipsum turpis laoreet dui, et dapibus dolor magna non sem. Fusce scelerisque, neque eleifend mattis mattis, sapien dui convallis mauris, quis lacinia ligula purus tincidunt diam. Sed efficitur purus sed tincidunt sodales.
+	<div class="projects" id="projects">
+	<h1>Portfolio</h1>
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position:relative;z-index:1;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://ocean.nationalgeographic.com/u/TvyamNb-BivtNwpvn7Sct0VFDulyAfA9wBcU0gVHVnqC5ghqXjggeitqtJ-1ZIZ1rmCgor42TXOteIQU/" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="http://ocean.nationalgeographic.com/u/TvyamNb-BivtNwpvn7Sct0VFDulyAfA9wBcU0gVHVnqC5ghqXjggeitqtJ-1ZIZ1rmCgor42TXOteIQU/" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="http://ocean.nationalgeographic.com/u/TvyamNb-BivtNwpvn7Sct0VFDulyAfA9wBcU0gVHVnqC5ghqXjggeitqtJ-1ZIZ1rmCgor42TXOteIQU/" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+	</div>
+
+	<div class="contactme" id="contactme">
+	<h1>Title Title Title</h1>
+	</div>
 </div>
 
 
@@ -63,4 +169,13 @@ User Story: I can click different buttons that will take me to the portfolio cre
 
 User Story: I can see thumbnail images of different projects the portfolio creator has built (if you haven't built any websites before, use placeholders.)
 
-User Story: I navigate to different sections of the webpage by clicking buttons in the navigation.-->
+User Story: I navigate to different sections of the webpage by clicking buttons in the navigation.
+
+Palette: https://www.design-seeds.com/wander/wanderlust/color-view-41/ 
+#5B6F81
+#4B423F
+#72A5A8
+#B2CBD3
+#D8DEEC
+#F4EEEC
+-->
